@@ -16,11 +16,11 @@ public class RestCalculateServiceTest {
     }
     @Test
 
-    public void shouldCalcInexact() {
+    public void shouldCalcInExact() {
         RestCalculateService service = new RestCalculateService();
 
-        int expected = 4;
-        int actual = service.calculate (10_000, 3_000, 20_000);
+        int expected = 2;
+        int actual = service.calculate (100_000, 60_000, 150_000);
 
         Assertions.assertEquals(expected, actual);
     }
